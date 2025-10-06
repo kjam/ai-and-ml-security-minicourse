@@ -1,6 +1,6 @@
 ## Mini-Course: AI/ML Security
 
-This repository is for the [Probably Private YouTube mini-course](TODO) to introduce curious technical persons to the field of AI/ML security. In this mini-course, you'll learn:
+This repository is for the [Probably Private YouTube mini-course](https://www.youtube.com/playlist?list=PLJkNSeYcYBlC88vkG58yx3fHSobmCmDw_) to introduce curious technical persons to the field of AI/ML security. In this mini-course, you'll learn:
 
 - Red Teaming basics
 - Adversarial machine learning
@@ -9,7 +9,7 @@ This repository is for the [Probably Private YouTube mini-course](TODO) to intro
 
 Currently, these notebooks are in progress, so feel free to fork but expect changes!
 
-If you have a suggestion for another library or additional topic, feel free to drop me a line :)
+If you have a suggestion for another library or additional topic, feel free to drop me a line. :)
 
 ## Repository Information
 
@@ -31,6 +31,18 @@ $ conda activate mlsecurity
 $ conda install pip
 $ pip install -r requirements.txt
 ```
+
+### Installation tips for getting started with no Python environment
+
+1. Download Anaconda: https://www.anaconda.com/download
+2. Download GitHub Desktop: https://desktop.github.com/download/
+3. In GitHub Desktop, go to this repository and clone it.
+4. Download ollama for desktop: https://ollama.com/download
+5. Download a few llamafiles: https://github.com/Mozilla-Ocho/llamafile?tab=readme-ov-file#other-example-llamafiles and make sure to make them executable (If new to this, search: your OS + how to change file permissions to make executable)
+6. Open an Anaconda prompt, navigate to where the GitHub repository is, follow the conda install instruction above. 
+7. Launch Jupyter Notebook by typing 'jupyter notebook' in that same prompt. More info on Step 6+7 here: https://dev.to/saintniyi/launch-anaconda-jupyter-notebook-environment-from-any-folder-in-any-drive-58mj
+
+If you run into any issues, please let me know!
 
 ### Repository structure
 

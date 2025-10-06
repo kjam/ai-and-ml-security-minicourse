@@ -1,0 +1,11 @@
+markdown
+pandas
+dotenv
+ollama
+torch
+jupyter
+openai
+matplotlib
+seaborn
+presidio_analyzer
+presidio_anonymizer
