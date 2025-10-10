@@ -1,7 +1,7 @@
 # Original Source: https://github.com/Mozilla-Ocho/llamafile-rag-example
 
 import requests
-import llamafile_settings
+import llamafile_settings as settings
 import numpy as np
 
 
