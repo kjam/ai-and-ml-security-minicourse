@@ -1,0 +1,27 @@
+[project]
+name = "mlsecurity"
+version = "0.1.0"
+description = "Offensive and defensive security for LLMs"
+requires-python = ">=3.12"
+dependencies = [
+    "python-dotenv>=1.0.0", 
+    "jupyter>=1.1.1",
+    "markdown>=3.6",
+    "matplotlib>=3.8.0",
+    "ollama>=0.6.2",
+    "openai>=2.38.0",
+    "pandas>=2.2.0",         
+    "presidio-analyzer>=2.2.362",
+    "presidio-anonymizer>=2.2.362",
+    "seaborn>=0.13.2",
+    "torch>=2.2.0",           
+    "transformers>=4.40.0",   
+]
+
+[tool.pixi.workspace]
+channels = ["conda-forge", "pytorch"] 
+platforms = ["linux-64", "osx-arm64", "win-64"]
+
+[tool.pixi.tasks]
+notebook = "jupyter lab"
+run-tests = "python -m unittest discover"

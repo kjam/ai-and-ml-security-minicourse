@@ -17,13 +17,51 @@ This project contains the Jupyter Notebooks and the associated requirements file
 
 To have a look at an earlier version of the course which will work on older versions of Python, check out the [original course repository (2019)](https://resources.oreilly.com/live-training/security-for-machine-learning).
 
+Shield: [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
+
+This work is licensed under a
+[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
+
+[![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
+
+[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
+[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
+
 ### Local Installation
 
 To install locally, please follow these steps:
 
-These lessons has been tested for Python 3.9-Python 3.12 and primarily use the latest release of each library, except where versions are pinned. You likely can run most of the code with older releases, but if you run into an issue, try upgrading the library in question first.
+#### (Recommended) Using pixi
 
-```pip install -r requirements.txt```
+[pixi](https://pixi.prefix.dev/latest/) is a package management tool useful for installing Python
+and project dependencies. It has nice support for CPU and GPU environments.
+
+After cloning the repo:
+
+1. [Install pixi](https://pixi.prefix.dev/latest/installation/).
+2. Install and activate the pixi environment: `pixi install`
+3. Check the dependencies installed: `pixi list`
+4. Run a command: `pixi run jupyter lab`
+
+Helpful commands in [Getting Started](https://pixi.prefix.dev/latest/getting_started/):
+- `pixi -h` - help
+- `pixi self-update` - update pixi itself
+
+#### Using uv
+
+If you are using [uv](https://docs.astral.sh/uv/), you can also use the pyproject.toml file to install the necessary requirements.
+
+```
+$ uv venv
+$ source .venv/bin/activate
+$ uv sync
+$ uv run jupyter lab
+```
+
+#### Using conda+pip
+
+If using [conda](https://www.anaconda.com/docs/getting-started/miniconda/install/overview), you can create an environment using Python3.12 and use the requirements file with pip. 
 
 ```
 $ conda create -n mlsecurity --copy python=3.12
@@ -31,16 +69,6 @@ $ conda activate mlsecurity
 $ conda install pip
 $ pip install -r requirements.txt
 ```
-
-### Installation tips for getting started with no Python environment
-
-1. Download Anaconda: https://www.anaconda.com/download
-2. Download GitHub Desktop: https://desktop.github.com/download/
-3. In GitHub Desktop, go to this repository and clone it.
-4. Download ollama for desktop: https://ollama.com/download
-5. Download a few llamafiles: https://github.com/Mozilla-Ocho/llamafile?tab=readme-ov-file#other-example-llamafiles and make sure to make them executable (If new to this, search: your OS + how to change file permissions to make executable)
-6. Open an Anaconda prompt, navigate to where the GitHub repository is, follow the conda install instruction above. 
-7. Launch Jupyter Notebook by typing 'jupyter notebook' in that same prompt. More info on Step 6+7 here: https://dev.to/saintniyi/launch-anaconda-jupyter-notebook-environment-from-any-folder-in-any-drive-58mj
 
 If you run into any issues, please let me know!
 

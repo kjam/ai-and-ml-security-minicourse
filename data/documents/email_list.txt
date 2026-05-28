@@ -1,0 +1,4 @@
+name,email
+Francis,foo@bar.com
+Fred,fred@yahoo.de
+Tabitha,taz@example.com

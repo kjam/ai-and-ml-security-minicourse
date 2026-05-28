@@ -5,3 +5,7 @@ llm-attacks/
 steal_ml/
 .DS_Store
 .ipynb_checkpoints/
+data/traces/*
+!data/traces
+.pixi/*
+!.pixi/config.toml

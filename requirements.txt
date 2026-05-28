@@ -3,6 +3,7 @@ pandas
 dotenv
 ollama
 torch
+transformers
 jupyter
 openai
 matplotlib
