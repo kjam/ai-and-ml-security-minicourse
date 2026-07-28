@@ -32,7 +32,9 @@ This work is licensed under a
 
 To install locally, please follow these steps:
 
-#### (Recommended) Using pixi
+First, install [ollama](https://ollama.com/) and download a few [llamafiles](https://docs.mozilla.ai/llamafile/getting-started/pre-built-llamafiles). Make sure you can run those first by following the respective documentation. Once your models are working, get your Python environment set up by following one of the  
+
+#### Python setup: (Recommended) Using pixi
 
 [pixi](https://pixi.prefix.dev/latest/) is a package management tool useful for installing Python
 and project dependencies. It has nice support for CPU and GPU environments.
@@ -48,7 +50,7 @@ Helpful commands in [Getting Started](https://pixi.prefix.dev/latest/getting_sta
 - `pixi -h` - help
 - `pixi self-update` - update pixi itself
 
-#### Using uv
+#### Python setup (Option 2): Using uv
 
 If you are using [uv](https://docs.astral.sh/uv/), you can also use the pyproject.toml file to install the necessary requirements.
 
@@ -59,9 +61,9 @@ $ uv sync
 $ uv run jupyter lab
 ```
 
-#### Using conda+pip
+#### Python setup (Option 3): Using conda+pip
 
-If using [conda](https://www.anaconda.com/docs/getting-started/miniconda/install/overview), you can create an environment using Python3.12 and use the requirements file with pip. 
+If using [conda](https://www.anaconda.com/docs/getting-started/miniconda/install/overview), you can create an environment using Python3.12 and use the requirements file with pip.
 
 ```
 $ conda create -n mlsecurity --copy python=3.12
