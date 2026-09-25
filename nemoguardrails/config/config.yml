@@ -1,0 +1,35 @@
+models:
+  - type: main
+    engine: openai
+    model: llama3  # Match the exact model tag in Ollama
+    parameters:
+      base_url: "http://localhost:11434/v1"
+      api_key: "ollama"  # Non-empty string required as placeholder
+
+  - type: llama_guard
+    engine: openai
+    model: llama-guard3:latest
+    parameters:
+      base_url: "http://localhost:11434/v1"
+      api_key: "ollama"
+  
+  - type: topic_control
+    engine: openai
+    model: llama3
+    parameters:
+      base_url: "http://localhost:11434/v1"
+      api_key: "ollama"
+
+rails:
+  input:
+    flows:
+      - llama guard check input
+      - topic safety check input $model=topic_control
+
+  output:
+    flows:
+      - llama guard check output
+
+tracing:
+  enabled: true
+  span_format: opentelemetry

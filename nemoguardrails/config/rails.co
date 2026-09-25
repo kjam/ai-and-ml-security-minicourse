@@ -1,0 +1,20 @@
+define flow llama guard check input
+  $allowed = execute llama_guard_check_input
+  
+  if not $allowed
+    bot refuse to respond
+    stop
+
+define flow llama guard check output
+  $allowed = execute llama_guard_check_output
+  
+  if not $allowed
+    bot refuse to respond
+    stop
+
+define bot refuse to respond
+  "I cannot fulfill this request as it violates safety guidelines."
+
+
+
+

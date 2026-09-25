@@ -9,3 +9,5 @@ data/traces/*
 !data/traces
 .pixi/*
 !.pixi/config.toml
+.traces/
+.chainlit/
